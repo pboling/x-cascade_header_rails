@@ -1,4 +1,6 @@
 XCascadeHeaderRails::Application.routes.draw do
+  root to: 'home#index'
+
   # The buck stops here
   match 'none'  => proc { |env| [401, {},                       ["Not Authorized"]] }
   match 'empty' => proc { |env| [401, {'X-Cascade' => ''},      ["Not Authorized"]] }
