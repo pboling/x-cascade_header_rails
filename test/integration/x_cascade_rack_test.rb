@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class XCascadeTest < ActionDispatch::IntegrationTest
+class XCascadeRackTest < ActionDispatch::IntegrationTest
   test '/none is 401 error' do
     get '/none'
     assert_equal path, '/none'

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+
+  mount RootAPI => '/api'
+
   devise_for :users
+
   root to: 'home#index'
 
   # The buck stops here
