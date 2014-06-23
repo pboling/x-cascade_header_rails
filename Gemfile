@@ -40,3 +40,12 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'warden'
 gem 'grape'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+end
+
+group :test do
+  gem 'capybara'
+end
