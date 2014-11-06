@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.18'
+gem 'rails', '3.2.20'
+gem 'slim'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -40,6 +41,8 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'warden'
 gem 'grape'
+gem 'rack-insight', path: '/Users/pboling/Documents/src/my/rack-insight'
+gem 'nokogiri', '~> 1.6.3.1'
 
 group :development, :test do
   gem 'rspec-rails'
